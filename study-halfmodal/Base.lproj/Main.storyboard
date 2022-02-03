@@ -41,6 +41,17 @@
                     <view key="view" contentMode="scaleToFill" id="SeR-ng-HLc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQK-Qc-7o2">
+                                <rect key="frame" x="177" y="225" width="61" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Close"/>
+                                <connections>
+                                    <action selector="closeModal" destination="rFo-Ua-U8E" eventType="touchUpInside" id="Psm-OE-mvz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Pk8-yz-Gu1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
