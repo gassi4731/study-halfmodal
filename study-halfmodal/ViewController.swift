@@ -9,12 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var fruit: String!
+    
+    @IBOutlet var fruitLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        fruitLabel.text = fruit
     }
     
-    @IBAction func modalButton () {
+    func updateLabel() {
+        fruitLabel.text = fruit
+    }
+    
+    @IBAction func openModal () {
         let vc = self.storyboard!.instantiateViewController(withIdentifier: "NextViewController") as! NextViewController
         if let sheet = vc.sheetPresentationController {
             // モーダルのサイズを指定する
